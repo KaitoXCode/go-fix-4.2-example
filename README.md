@@ -5,6 +5,6 @@ execution report to eachother every 10s
 
 ## deployment
 
-manual -> start acceptor: `go run ./acceptor/.` start initiator:
-`go run ./initiator/.` \n make -> start acceptor: `make acceptor` start
-initiator: `make initiator`
+manual -> <br /> start acceptor: `go run ./acceptor/.` <br /> start initiator:
+`go run ./initiator/.` <br />make -> <br /> start acceptor: `make acceptor`
+<br /> start initiator: `make initiator`
