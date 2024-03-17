@@ -7,4 +7,4 @@ execution report to eachother every 10s
 
 manual -> start acceptor: `go run ./acceptor/.` start initiator:
 `go run ./initiator/.` \n make -> start acceptor: `make acceptor` start
-initiator: `make initiator` \n make -> start all: `make all`
+initiator: `make initiator`

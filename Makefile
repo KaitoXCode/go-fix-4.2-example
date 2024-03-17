@@ -7,6 +7,5 @@ acceptor:
 initiator:
 	go run ./initiator/.
 
-all:
-	go run ./acceptor/.
-	go run ./initiator/.
+# Phony targets are not files
+.PHONY: initiator acceptor
