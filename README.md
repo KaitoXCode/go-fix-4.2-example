@@ -1,4 +1,4 @@
-# bi-dir-fix-example
+# go-fix-4.2-example
 
 project including a fix initiator and acceptor which communicate a simple
 execution report to eachother every 10s
