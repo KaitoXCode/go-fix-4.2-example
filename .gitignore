@@ -19,3 +19,8 @@
 
 # Go workspace file
 go.work
+
+# proj configs
+*/quickfix.cfg
+producer/logs/*
+consumer/logs/*
