@@ -1,10 +1,10 @@
 # bi-dir-fix-example
 
-project including a fix producer and consumer which communicate simple messages
-to eachother
+project including a fix initiator and acceptor which communicate a simple
+execution report to eachother every 10s
 
 ## deployment
 
-manual -> start acceptor: `go run ./consumer/.` start initiator:
-`go run ./producer/.` \n make -> start acceptor: `make consumer` start
-initiator: `make producer` \n make -> start all: `make all`
+manual -> start acceptor: `go run ./acceptor/.` start initiator:
+`go run ./initiator/.` \n make -> start acceptor: `make acceptor` start
+initiator: `make initiator` \n make -> start all: `make all`

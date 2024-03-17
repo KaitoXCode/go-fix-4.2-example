@@ -1,12 +1,12 @@
 # Executing shell for make cmds
 SHELL := /bin/bash
 
-consumer:
-	go run ./consumer/.
+acceptor:
+	go run ./acceptor/.
 
-producer:
-	go run ./producer/.
+initiator:
+	go run ./initiator/.
 
 all:
-	go run ./consumer/.
-	go run ./producer/.
+	go run ./acceptor/.
+	go run ./initiator/.
