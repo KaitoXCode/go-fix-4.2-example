@@ -63,6 +63,7 @@ func (p Producer) NewApp(env string) {
 }
 
 func main() {
+  log.Println(" [PRODUCER] [INFO] [*]: Starting FIX initiator...")
   app := Producer{}
   app.NewApp("DEVELOPMENT")
   cfg, err := os.Open("producer/quickfix.cfg")
@@ -106,6 +107,8 @@ func main() {
   }
   shutdownChannel := make(chan os.Signal, 1)
   signal.Notify(shutdownChannel, syscall.SIGINT, syscall.SIGTERM)
+  log.Println(" [PRODUCER] [INFO] [*]: Stopping FIX initiator...")
   <-shutdownChannel
   initiator.Stop()
+  log.Println(" [PRODUCER] [INFO] [*]: Stopped FIX initiator")
 }
