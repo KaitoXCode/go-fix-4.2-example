@@ -5,4 +5,6 @@ to eachother
 
 ## deployment
 
-start acceptor: `go run ./consumer/.` \n start initiator: `go run ./producer/.`
+manual -> start acceptor: `go run ./consumer/.` start initiator:
+`go run ./producer/.` \n make -> start acceptor: `make consumer` start
+initiator: `make producer` \n make -> start all: `make all`
